@@ -8,5 +8,3 @@ names = EveryPolitician::Wikidata.wikipedia_xpath(
   xpath: '//h3[span[@id="Abgeordnete"]]/following-sibling::table[1]//tr[td]//td[1]//a[not(@class="new")]/@title',
 )
 EveryPolitician::Wikidata.scrape_wikidata(names: { de: names }, output: false)
-warn EveryPolitician::Wikidata.notify_rebuilder
-
